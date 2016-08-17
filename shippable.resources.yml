@@ -1,5 +1,5 @@
 resources:
-  - name: box-sn-1
+  - name: box-sn
     type: image
     integration: dockerhub
     pointer:
@@ -8,7 +8,7 @@ resources:
     seed:
       versionName: "v2.4"
 
-  - name: box-nginx-1
+  - name: box-nginx
     type: image
     integration: dockerhub
     pointer:
@@ -53,7 +53,7 @@ resources:
   #   seed:
   #     interval: "*/2 * * * *"
 
-  - name: tri-cluster-1
+  - name: tri-cluster
     type: cluster
     integration: triton
     pointer:
