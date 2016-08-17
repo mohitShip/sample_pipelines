@@ -10,6 +10,12 @@ jobs:
     steps:
       - IN: box-sn
       - IN: trigger-dv-man
+  
+  - name: mohit-3
+    type: manifest
+    steps:
+      - IN: Angular-Demo
+      - IN: trigger-dv-man
 
   # - name: ecs-deploy
   #   type: deploy
