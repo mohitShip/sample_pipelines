@@ -73,7 +73,7 @@ jobs:
   - name: ddc-deploy
     type: deploy
     steps:
-      - IN: box-man-1
+      #- IN: box-man-1
       - IN: ddc-cluster
 
   # - name: dcl-deploy
