@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "scriptnull/sample_node"
+      sourceName: "mohit5it9/ubuntu"
       isPull: false
     seed:
       versionName: "dc.pipeline.3"
