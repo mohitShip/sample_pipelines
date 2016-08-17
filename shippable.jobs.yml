@@ -11,11 +11,6 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
   
-  - name: mohit-3
-    type: manifest
-    steps:
-      - IN: box-ad
-      - IN: trigger-dv-man
 
   # - name: ecs-deploy
   #   type: deploy
