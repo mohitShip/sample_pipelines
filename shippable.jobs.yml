@@ -14,7 +14,7 @@ jobs:
   - name: mohit-3
     type: manifest
     steps:
-      - IN: Angular-Demo
+      - IN: box-ad
       - IN: trigger-dv-man
 
   # - name: ecs-deploy
