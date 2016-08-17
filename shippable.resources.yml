@@ -16,12 +16,7 @@ resources:
       isPull: false
     seed:
       versionName: latest
-  
-  - name: box-ad
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: mohit5it9/sample-script
+
 
   # - name: box-opts
   #   type: dockerOptions
