@@ -16,6 +16,12 @@ resources:
       isPull: false
     seed:
       versionName: latest
+  
+  - name: Angular-Demo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: "mohit5it9/Angular-Demo"
 
   # - name: box-opts
   #   type: dockerOptions
