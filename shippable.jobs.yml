@@ -30,7 +30,7 @@ jobs:
   - name: tri-deploy-1
     type: deploy
     steps:
-      - IN: jatin-1
+      - IN: mohit-1
       - IN: tri-cluster
       - TASK: managed
         deployMethod: upgrade
