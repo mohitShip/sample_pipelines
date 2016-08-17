@@ -2,13 +2,13 @@ jobs:
   - name: mohit-1
     type: manifest
     steps:
-      - IN: box-nginx-1
+      - IN: box-nginx
       - IN: trigger-dv-man
 
   - name: mohit-2
     type: manifest
     steps:
-      - IN: box-sn-1
+      - IN: box-sn
       - IN: trigger-dv-man
   
 
@@ -32,7 +32,7 @@ jobs:
     type: deploy
     steps:
       - IN: mohit-1
-      - IN: tri-cluster-1
+      - IN: tri-cluster
       - IN: mohit-2
       - TASK: managed
         deployMethod: upgrade
