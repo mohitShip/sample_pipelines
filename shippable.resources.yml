@@ -21,7 +21,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: mohit5it9/Angular-Demo
+      sourceName: mohit5it9/sample-script
 
   # - name: box-opts
   #   type: dockerOptions
