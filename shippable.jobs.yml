@@ -31,7 +31,7 @@ jobs:
   - name: tri-deploy-1
     type: deploy
     steps:
-      - IN: mohit-1
+      - IN: mohit-2
       - IN: tri-cluster
       - TASK: managed
         deployMethod: upgrade
@@ -74,7 +74,7 @@ jobs:
     steps:
       #- IN: box-man-1
       - IN: ddc-cluster
-      - IN: mohit-2
+      - IN: mohit-1
 
   # - name: dcl-deploy
   #   type: dclDeploy
