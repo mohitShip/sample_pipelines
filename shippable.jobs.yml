@@ -28,14 +28,14 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  # - name: tri-deploy-1
-  #   type: deploy
-  #   steps:
-  #     - IN: mohit-1
-  #     - IN: tri-cluster
-  #     - IN: mohit-2
-  #     - TASK: managed
-  #       deployMethod: upgrade
+  - name: tri-deploy-1
+    type: deploy
+    steps:
+      - IN: mohit-1
+      - IN: tri-cluster
+      - IN: mohit-2
+      - TASK: managed
+        deployMethod: upgrade
 
   # - name: tri-deploy-2
   #   type: tripubDeploy
