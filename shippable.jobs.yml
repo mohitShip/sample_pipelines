@@ -70,13 +70,13 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: ddc-deploy
-    type: deploy
-    steps:
-      #- IN: box-man-1
-      - IN: ddc-cluster
-      - IN: mohit-1
-      - IN: mohit-2
+  # - name: ddc-deploy
+  #   type: deploy
+  #   steps:
+  #     #- IN: box-man-1
+  #     - IN: ddc-cluster
+  #     - IN: mohit-1
+  #     - IN: mohit-2
 
   # - name: dcl-deploy
   #   type: dclDeploy
