@@ -98,10 +98,17 @@ jobs:
       - IN: ddc-cluster
       - IN: mohit-2
 
-  # - name: dcl-deploy
-  #   type: dclDeploy
-  #   steps:
-  #     - IN: jD-1
-  #     - IN: jatin-2
-  #     - IN: dcl-cluster
-  #     - TASK: managed
+  - name: dcl-deploy-mohit
+    type: dclDeploy
+    on_success:
+      - NOTIFY: slackNotification
+      -NOTIFY: myEmail
+    on_start:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: myEmail
+      - NOTIFY: slackNotification
+    steps:
+      - IN: mohit-2
+      - IN: dcl-cluster
+      - TASK: managed
