@@ -14,6 +14,12 @@ jobs:
 
   - name: ecs-deploy-mohit
     type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure"
+      - NOTIFY: myEmail
     steps:
       - IN: mohit-2
       - IN: ecs-cluster
