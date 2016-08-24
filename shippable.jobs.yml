@@ -98,7 +98,7 @@ jobs:
       - IN: ddc-cluster
       - IN: mohit-2
 
-  - name: dcl-deploy-mohit
+  - name: dcl-deploy
     type: deploy
     on_success:
       - NOTIFY: slackNotification
