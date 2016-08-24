@@ -1,6 +1,9 @@
 jobs:
   - name: mohit-1
     type: manifest
+    on_success:
+      - NOTIFY: slackNotification
+      - SCRIPT: echo "this is a success"
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
