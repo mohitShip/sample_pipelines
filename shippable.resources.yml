@@ -80,7 +80,7 @@ resources:
       sourceName: "ddc-cluster"
 
   - name: dcl-cluster
-    type: dclCluster
+    type: cluster
     integration: dcl
     pointer:
       sourceName: "cluster-dcl"
