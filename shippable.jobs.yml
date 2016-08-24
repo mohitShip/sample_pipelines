@@ -109,6 +109,6 @@ jobs:
       - NOTIFY: myEmail
       - NOTIFY: slackNotification
     steps:
-      - IN: mohit-2
+      - IN: mohit-1
       - IN: dcl-cluster
       - TASK: managed
