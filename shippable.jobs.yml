@@ -75,9 +75,12 @@ jobs:
 
   - name: ddc-deploy
     type: deploy
-    on_start: myEmail
-    on_success: myEmail
-    on_failure: myEmail
+    on_start:
+      - NOTIFY: myEmail
+    on_success:
+      - NOTIFY: myEmail
+    on_failure:
+      _ NOTIFY: myEmail
     steps:
       #- IN: box-man-1
       - IN: ddc-cluster
