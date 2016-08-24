@@ -25,7 +25,7 @@ jobs:
       - NOTIFY: myEmail
       - script: echo "hello there"
     steps:
-      - IN: mohit-2
+      - IN: mohit-1
       - IN: ecs-cluster
       - TASK: managed
         deployMethod: upgrade
