@@ -90,3 +90,9 @@ resources:
   #   integration: jatin-dcl
   #   pointer:
   #     sourceName: "cluster-dcl"
+    - name: slackNotification
+      type: notification
+      integration: slack
+      pointer:
+        recipients:
+          - "#slackchannel"
