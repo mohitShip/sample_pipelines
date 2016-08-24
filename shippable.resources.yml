@@ -95,4 +95,4 @@ resources:
       integration: slack
       pointer:
         recipients:
-          - "#slackchannel"
+          - "#slack_notifications"
