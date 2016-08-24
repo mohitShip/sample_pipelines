@@ -83,7 +83,7 @@ resources:
     type: cluster
     integration: dcl
     pointer:
-      sourceName: "docker-cloud-node"
+      sourceName: "cluster-dcl"
 
   # - name: jatin-cluster
   #   type: cluster
