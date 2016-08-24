@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "scriptnull/sample_node"
+      sourceName: "library/nginx"
       isPull: false
     seed:
       versionName: "latest"
