@@ -63,7 +63,7 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: gkeDeploy
+  - name: gkeDeploy-mohit
     type: deploy
     on_start:
       - NOTIFY: slackNotification
