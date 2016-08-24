@@ -96,3 +96,10 @@ resources:
     pointer:
       recipients:
         - "#slack_notifications"
+        
+  - name: myEmail
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        -  "mohit@shippable.com"
