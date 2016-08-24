@@ -80,7 +80,7 @@ jobs:
     on_success:
       - NOTIFY: myEmail
     on_failure:
-      _ NOTIFY: myEmail
+      - NOTIFY: myEmail
     steps:
       #- IN: box-man-1
       - IN: ddc-cluster
