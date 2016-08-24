@@ -63,7 +63,7 @@ resources:
     type: cluster
     integration: aws
     pointer:
-      sourceName: "testCL"
+      sourceName: "loadBalanceTest"
       region: "us-east-1"
 
   - name: gke-cluster
