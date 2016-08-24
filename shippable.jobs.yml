@@ -99,7 +99,7 @@ jobs:
       - IN: mohit-2
 
   - name: dcl-deploy-mohit
-    type: dclDeploy
+    type: deploy
     on_success:
       - NOTIFY: slackNotification
       - NOTIFY: myEmail
