@@ -63,13 +63,19 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  # - name: gkeDeploy
-  #   type: deploy
-  #   steps:
-  #     - IN: jatin-1
-  #     - IN: gke-cluster
-  #     - TASK: managed
-  #       deployMethod: upgrade
+  - name: gkeDeploy
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: myEmail
+    steps:
+      - IN: mohit-2
+      - IN: gke-cluster
+      - TASK: managed
+        deployMethod: upgrade
 
   # - name: gkeDeploy-bg
   #   type: deploy
