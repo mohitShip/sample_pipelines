@@ -18,10 +18,10 @@ jobs:
       - NOTIFY: slackNotification
     on_success:
       - NOTIFY: slackNotification
-      - echo 'this is a success'
+      - echo "this is a success"
     on_failure:
       - NOTIFY: myEmail
-      - script: echo 'hello there!'
+      - script: echo "hello there"
     steps:
       - IN: mohit-2
       - IN: ecs-cluster
