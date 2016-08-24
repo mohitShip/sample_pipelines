@@ -18,7 +18,7 @@ jobs:
       - NOTIFY: slackNotification
     on_success:
       - NOTIFY: slackNotification
-      - echo "this is a success"
+      - script: echo "this is a success"
     on_failure:
       - NOTIFY: myEmail
       - script: echo "hello there"
