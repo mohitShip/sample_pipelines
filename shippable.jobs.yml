@@ -75,6 +75,9 @@ jobs:
 
   - name: ddc-deploy
     type: deploy
+    on_start: myEmail
+    on_success: myEmail
+    on_failure: myEmail
     steps:
       #- IN: box-man-1
       - IN: ddc-cluster
