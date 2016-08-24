@@ -102,7 +102,7 @@ jobs:
     type: dclDeploy
     on_success:
       - NOTIFY: slackNotification
-      -NOTIFY: myEmail
+      - NOTIFY: myEmail
     on_start:
       - NOTIFY: slackNotification
     on_failure:
