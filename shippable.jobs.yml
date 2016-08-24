@@ -72,7 +72,7 @@ jobs:
     on_failure:
       - NOTIFY: myEmail
     steps:
-      - IN: mohit-2
+      - IN: mohit-1
       - IN: gke-cluster
       - TASK: managed
         deployMethod: upgrade
