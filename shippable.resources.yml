@@ -79,11 +79,11 @@ resources:
     pointer:
       sourceName: "ddc-cluster"
 
-  # - name: dcl-cluster
-  #   type: dclCluster
-  #   integration: jatin-dcl
-  #   pointer:
-  #     sourceName: "cluster-dcl"
+  - name: dcl-cluster
+    type: dclCluster
+    integration: dcl
+    pointer:
+      sourceName: "cluster-dcl"
 
   # - name: jatin-cluster
   #   type: cluster
