@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "library/ubuntu"
+      sourceName: "scriptnull/sample_node"
       isPull: false
     seed:
       versionName: "latest"
@@ -12,10 +12,10 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "scriptnull/sample_node"
       isPull: false
     seed:
-      versionName: latest
+      versionName: dc.pipeline.3
 
 
   # - name: box-opts
