@@ -12,13 +12,13 @@ jobs:
       - IN: trigger-dv-man
   
 
-  # - name: ecs-deploy
-  #   type: deploy
-  #   steps:
-  #     - IN: jatin-2
-  #     - IN: ecs-cluster
-  #     - TASK: managed
-  #       deployMethod: upgrade
+  - name: ecs-deploy-mohit
+    type: deploy
+    steps:
+      - IN: mohit-2
+      - IN: ecs-cluster
+      - TASK: managed
+        deployMethod: upgrade
 
   # - name: ecs-deploy-bg
   #   type: ecsDeploy
