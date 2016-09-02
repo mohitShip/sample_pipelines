@@ -14,20 +14,20 @@ jobs:
       - IN: trigger-dv-man
   
 
-  - name: ecs-deploy-mohit
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-      - SCRIPT: echo "this is a success"
-    on_failure:
-      - NOTIFY: myEmail
-      - script: echo "hello there"
-    steps:
-      - IN: mohit-2
-      - IN: ecs-cluster
-      - TASK: managed
+  # - name: ecs-deploy-mohit
+  #   type: deploy
+  #   on_start:
+  #     - NOTIFY: slackNotification
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #     - SCRIPT: echo "this is a success"
+  #   on_failure:
+  #     - NOTIFY: myEmail
+  #     - script: echo "hello there"
+  #   steps:
+  #     - IN: mohit-2
+  #     - IN: ecs-cluster
+  #     - TASK: managed
         # deployMethod: upgrade
 
   # - name: ecs-deploy-bg
@@ -38,17 +38,17 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: tri-deploy-1
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: mohit-1
-      - IN: tri-cluster
-      - TASK: managed
-        deployMethod: upgrade
+  # - name: tri-deploy-1
+  #   type: deploy
+  #   on_start:
+  #     - NOTIFY: slackNotification
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #   steps:
+  #     - IN: mohit-1
+  #     - IN: tri-cluster
+  #     - TASK: managed
+  #       deployMethod: upgrade
 
   # - name: tri-deploy-2
   #   type: tripubDeploy
@@ -67,19 +67,19 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: gkeDeploy-mohit
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: myEmail
-    steps:
-      - IN: mohit-1
-      - IN: gke-cluster
-      - TASK: managed
-        deployMethod: upgrade
+  # - name: gkeDeploy-mohit
+  #   type: deploy
+  #   on_start:
+  #     - NOTIFY: slackNotification
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #   on_failure:
+  #     - NOTIFY: myEmail
+  #   steps:
+  #     - IN: mohit-1
+  #     - IN: gke-cluster
+  #     - TASK: managed
+  #       deployMethod: upgrade
 
   # - name: gkeDeploy-bg
   #   type: deploy
@@ -102,17 +102,17 @@ jobs:
       - IN: ddc-cluster
       - IN: mohit-2
 
-  - name: dcl-deploy
-    type: deploy
-    on_success:
-      - NOTIFY: slackNotification
-      - NOTIFY: myEmail
-    on_start:
-      - NOTIFY: slackNotification
-    on_failure:
-      - NOTIFY: myEmail
-      - NOTIFY: slackNotification
-    steps:
-      - IN: mohit-1
-      - IN: dcl-cluster
-      - TASK: managed
+  # - name: dcl-deploy
+  #   type: deploy
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #     - NOTIFY: myEmail
+  #   on_start:
+  #     - NOTIFY: slackNotification
+  #   on_failure:
+  #     - NOTIFY: myEmail
+  #     - NOTIFY: slackNotification
+  #   steps:
+  #     - IN: mohit-1
+  #     - IN: dcl-cluster
+  #     - TASK: managed
