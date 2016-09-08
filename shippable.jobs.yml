@@ -38,17 +38,17 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: tri-deploy-1
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: mohit-1
-      - IN: tri-cluster
-      - TASK: managed
-        deployMethod: upgrade
+  # - name: tri-deploy-1
+  #   type: deploy
+  #   on_start:
+  #     - NOTIFY: slackNotification
+  #   on_success:
+  #     - NOTIFY: slackNotification
+  #   steps:
+  #     - IN: mohit-1
+  #     - IN: tri-cluster
+  #     - TASK: managed
+  #       deployMethod: upgrade
 
   # - name: tri-deploy-2
   #   type: tripubDeploy
@@ -67,19 +67,19 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  # - name: gkeDeploy-mohit
-  #   type: deploy
-  #   on_start:
-  #     - NOTIFY: slackNotification
-  #   on_success:
-  #     - NOTIFY: slackNotification
-  #   on_failure:
-  #     - NOTIFY: myEmail
-  #   steps:
-  #     - IN: mohit-1
-  #     - IN: gke-cluster
-  #     - TASK: managed
-  #       deployMethod: upgrade
+  - name: gkeDeploy-mohit
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: myEmail
+    steps:
+      - IN: mohit-1
+      - IN: gke-cluster
+      - TASK: managed
+        deployMethod: upgrade
 
   # - name: gkeDeploy-bg
   #   type: deploy
@@ -89,18 +89,18 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: ddc-deploy
-    type: deploy
-    on_start:
-      - NOTIFY: myEmail
-    on_success:
-      - NOTIFY: myEmail
-    on_failure:
-      - NOTIFY: myEmail
-    steps:
-      #- IN: box-man-1
-      - IN: ddc-cluster
-      - IN: mohit-2
+  # - name: ddc-deploy
+  #   type: deploy
+  #   on_start:
+  #     - NOTIFY: myEmail
+  #   on_success:
+  #     - NOTIFY: myEmail
+  #   on_failure:
+  #     - NOTIFY: myEmail
+  #   steps:
+  #     #- IN: box-man-1
+  #     - IN: ddc-cluster
+  #     - IN: mohit-2
 
   # - name: dcl-deploy
   #   type: deploy
