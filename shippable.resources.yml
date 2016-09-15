@@ -53,11 +53,11 @@ resources:
   #   seed:
   #     interval: "*/2 * * * *"
 
-  # - name: tri-cluster
-  #   type: cluster
-  #   integration: triton
-  #   pointer:
-  #     region: "us-east-3"
+  - name: tri-cluster
+    type: cluster
+    integration: triton
+    pointer:
+      region: "us-east-3"
 
   # - name: ecs-cluster
   #   type: cluster
@@ -66,12 +66,12 @@ resources:
   #     sourceName: "loadBalanceTest"
   #     region: "us-east-1"
 
-  - name: gke-cluster
-    type: cluster
-    integration: gke
-    pointer:
-      sourceName: "small-cluster"
-      region: "us-east1-d"
+  # - name: gke-cluster
+  #   type: cluster
+  #   integration: gke
+  #   pointer:
+  #     sourceName: "small-cluster"
+  #     region: "us-east1-d"
 
   # - name: ddc-cluster
   #   type: cluster
