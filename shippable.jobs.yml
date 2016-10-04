@@ -57,7 +57,7 @@ jobs:
       - script: echo 'on success !!!!!'
       - script: echo 'uname is'
       - script: uname -a
-      - script: pwd
+      - script: echo 'hello'
 
   # - name: sh-ecsDeploy
   #   type: deploy
