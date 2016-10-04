@@ -55,6 +55,8 @@ jobs:
       - OUT: sn-file
     on_success:
       - script: echo 'on success !!!!!'
+      - script: echo 'pwd is'
+      - script: pwd
 
   # - name: sh-ecsDeploy
   #   type: deploy
