@@ -5,8 +5,8 @@ resources:
     pointer:
       sourceName: "library/nginx"
       isPull: false
-    seed:
-      versionName: "latest"
+    #seed:
+      #versionName: "latest"
 
   - name: box-nginx
     type: image
