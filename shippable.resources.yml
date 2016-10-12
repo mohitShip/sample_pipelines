@@ -35,7 +35,7 @@ resources:
         #options:
           #max-size: 50m
       portMappings:
-        - "80:80"
+        - "80:abc"
       #volumesFrom:
         #- "basedataContainer"
         #- "basedataContainer:ro"
