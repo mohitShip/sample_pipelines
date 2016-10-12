@@ -47,6 +47,7 @@ jobs:
     steps:
       - IN: mohit-1
       - IN: tri-aws
+      - IN: box-opts
       - TASK: managed
         deployMethod: upgrade
 
