@@ -89,18 +89,18 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-   - name: ddc-deploy
-     type: deploy
-     on_start:
-       - NOTIFY: myEmail
-     on_success:
-       - NOTIFY: myEmail
-     on_failure:
-       - NOTIFY: myEmail
-     steps:
-       - IN: box-man-1
-       - IN: ddc-cluster
-       - IN: mohit-2
+  - name: ddc-deploy
+    type: deploy
+    on_start:
+      - NOTIFY: myEmail
+    on_success:
+      - NOTIFY: myEmail
+    on_failure:
+      - NOTIFY: myEmail
+    steps:
+      - IN: box-man-1
+      - IN: ddc-cluster
+      - IN: mohit-2
 
   # - name: dcl-deploy
   #   type: deploy
