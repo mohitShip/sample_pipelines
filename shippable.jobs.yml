@@ -96,7 +96,6 @@ jobs:
     on_success:
       - NOTIFY: myEmail
     steps:
-      - IN: box-man-1
       - IN: ddc-cluster
       - IN: mohit-2
 
