@@ -58,6 +58,13 @@ resources:
     integration: triton
     pointer:
       region: "us-east-3"
+  
+  - name: tri-aws
+    type: cluster
+    integration: aws
+    pointer:
+      sourceName: "testCL"
+      pointer: "us-west-2"
 
   # - name: ecs-cluster
   #   type: cluster
