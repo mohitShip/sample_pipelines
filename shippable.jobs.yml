@@ -46,7 +46,7 @@ jobs:
       - NOTIFY: slackNotification
     steps:
       - IN: mohit-1
-      - IN: tri-cluster
+      - IN: tri-aws
       - TASK: managed
         deployMethod: upgrade
 
