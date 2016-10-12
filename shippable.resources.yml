@@ -1,7 +1,7 @@
 resources:
   - name: box-sn
     type: image
-    #integration: dockerhub
+    integration: 
     pointer:
       sourceName: "library/nginx"
       isPull: false
