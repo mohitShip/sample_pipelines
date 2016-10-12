@@ -34,6 +34,8 @@ resources:
         type: "json-file"
         options:
           max-size: 50m
+      portMappings:
+        - "80:80"
       volumesFrom:
         - "basedataContainer"
         - "basedataContainer:ro"
