@@ -18,25 +18,25 @@ resources:
       versionName: dc.pipeline.3
 
 
-   - name: sample_pipelines_master_rc
-     type: dockerOptions
-     version:
-       publishAllPorts : true
-       labels:
-         jatin : triton
-         vishnu : tripub
-         joyent : badServer
-       dnsServers:
-         - "8.8.8.8"
-       dnsSearch:
-         - "10.10.10.10"
-       logConfig:
-         type: "json-file"
-         options:
-           max-size: 50m
-       volumesFrom:
-         - "basedataContainer"
-         - "basedataContainer:ro"
+  - name: sample_pipelines_master_rc
+    type: dockerOptions
+    version:
+      publishAllPorts : true
+      labels:
+        jatin : triton
+        #vishnu : tripub
+        #joyent : badServer
+      dnsServers:
+        - "8.8.8.8"
+      dnsSearch:
+        - "10.10.10.10"
+      logConfig:
+        type: "json-file"
+        options:
+          max-size: 50m
+      volumesFrom:
+        - "basedataContainer"
+        - "basedataContainer:ro"
 
   # - name: nightly-4
   #   type: time
