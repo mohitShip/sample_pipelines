@@ -45,7 +45,7 @@ jobs:
     on_success:
       - NOTIFY: slackNotification
     steps:
-      - IN: mohit-2
+      - IN: mohit-1
       - IN: tri-cluster
       - TASK: managed
         deployMethod: upgrade
