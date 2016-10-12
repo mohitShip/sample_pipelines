@@ -38,17 +38,17 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  #- name: tri-deploy-1
-  #  type: deploy
-  #  on_start:
-  #    - NOTIFY: slackNotification
-  #  on_success:
-  #    - NOTIFY: slackNotification
-  #  steps:
-  #    - IN: mohit-1
-  #    - IN: tri-cluster
-  #    - TASK: managed
-  #      deployMethod: upgrade
+  - name: tri-deploy-1
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: slackNotification
+    steps:
+      - IN: mohit-1
+      - IN: tri-cluster
+      - TASK: managed
+        deployMethod: upgrade
 
   # - name: tri-deploy-2
   #   type: tripubDeploy
