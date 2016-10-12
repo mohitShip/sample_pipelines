@@ -10,7 +10,7 @@ resources:
 
   - name: box-nginx
     type: image
-    integration: docker
+    #integration: docker
     pointer:
       sourceName: "scriptnull/sample_node"
       isPull: false
