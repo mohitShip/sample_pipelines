@@ -18,7 +18,7 @@ resources:
       versionName: dc.pipeline.3
 
 
-  - name: sample_pieplines
+  - name: sample_pipelines_master_rc
     type: dockerOptions
     version:
       publishAllPorts : true
