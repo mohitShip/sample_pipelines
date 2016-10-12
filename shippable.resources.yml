@@ -20,23 +20,23 @@ resources:
 
   - name: box-opts
     type: dockerOptions
-    #version:
-      #publishAllPorts : true
-      #labels:
-        #jatin : triton
-        #vishnu : tripub
-        #joyent : badServer
-      #dnsServers:
-        #- "8.8.8.8"
-      #dnsSearch:
-        #- "10.10.10.10"
-      #logConfig:
-        #type: "json-file"
-        #options:
-          #max-size: 50m
-      #volumesFrom:
-        #- "basedataContainer"
-        #- "basedataContainer:ro"
+    version:
+      publishAllPorts : true
+      labels:
+        jatin : triton
+        vishnu : tripub
+        joyent : badServer
+      dnsServers:
+        - "8.8.8.8"
+      dnsSearch:
+        - "10.10.10.10"
+      logConfig:
+        type: "json-file"
+        options:
+          max-size: 50m
+      volumesFrom:
+        - "basedataContainer"
+        - "basedataContainer:ro"
 
   # - name: nightly-4
   #   type: time
