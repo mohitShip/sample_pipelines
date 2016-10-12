@@ -56,8 +56,8 @@ resources:
   - name: tri-cluster
     type: cluster
     integration: triton
-    pointer:
-      region: "us-east-3"
+    #pointer:
+      #region: "us-east-3"
 
   # - name: ecs-cluster
   #   type: cluster
