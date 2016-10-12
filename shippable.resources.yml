@@ -1,7 +1,7 @@
 resources:
   - name: box-sn
     type: image
-    integration: 
+    integration: docker
     pointer:
       sourceName: "library/nginx"
       isPull: false
@@ -10,7 +10,7 @@ resources:
 
   - name: box-nginx
     type: image
-    integration: dockerhub
+    integration: docker
     pointer:
       sourceName: "scriptnull/sample_node"
       isPull: false
