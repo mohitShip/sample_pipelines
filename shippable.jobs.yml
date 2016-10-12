@@ -45,7 +45,7 @@ jobs:
     on_success:
       - NOTIFY: slackNotification
     steps:
-      - IN: mohit-1
+      - IN: mohit-2
       - IN: tri-cluster
       - TASK: managed
         deployMethod: upgrade
@@ -97,7 +97,7 @@ jobs:
       - NOTIFY: myEmail
     steps:
       - IN: ddc-cluster
-      - IN: mohit-2
+      - IN: mohit-1
 
   # - name: dcl-deploy
   #   type: deploy
