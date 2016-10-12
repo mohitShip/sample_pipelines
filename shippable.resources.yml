@@ -18,7 +18,7 @@ resources:
       versionName: dc.pipeline.3
 
 
-  - name: box_opts
+  - name: sample_pieplines
     type: dockerOptions
     version:
       publishAllPorts : true
