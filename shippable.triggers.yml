@@ -2,4 +2,6 @@ triggers:
    - name: trigger-dv-man
      type: trigger
      version:
-       counter: 0
+       counter: 10
+ Cancel
+Contact GitHub API Training Shop Blog About
