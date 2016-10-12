@@ -34,8 +34,8 @@ resources:
         #type: "json-file"
         #options:
           #max-size: 50m
-      portMappings:
-        - "800:800"
+      #portMappings:
+        #- "800:800"
       cmd: "home/mohit"
       #volumesFrom:
         #- "basedataContainer"
