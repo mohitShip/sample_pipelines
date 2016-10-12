@@ -92,10 +92,8 @@ jobs:
   - name: ddc-deploy
     type: deploy
     on_start:
-      - NOTIFY: myEmail
+      - NOTIFY: slackNotification
     on_success:
-      - NOTIFY: myEmail
-    on_failure:
       - NOTIFY: myEmail
     steps:
       - IN: box-man-1
