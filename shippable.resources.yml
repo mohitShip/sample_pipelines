@@ -20,7 +20,7 @@ resources:
 
   - name: box-opts
     type: dockerOptions
-    VERSION:
+    versions:
       publishAllPorts : true
       labels:
         jatin : triton
