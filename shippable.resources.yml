@@ -36,6 +36,8 @@ resources:
           #max-size: 50m
       portMappings:
         - "80:80"
+      cmd:
+        - "home/mohit"
       #volumesFrom:
         #- "basedataContainer"
         #- "basedataContainer:ro"
