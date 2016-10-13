@@ -1,7 +1,7 @@
 resources:
   - name: box-sn
     type: image
-    integration:
+    integration: docker
     pointer:
       sourceName: "library/nginx"
       isPull: false
