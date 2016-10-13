@@ -26,8 +26,8 @@ resources:
         #jatin : triton
         #vishnu : tripub
         #joyent : badServer
-      dnsServers:
-        - "8.8.8.8"
+      #dnsServers:
+        #- "8.8.8.8"
       #dnsSearch:
         #- "10.10.10.10"
       #logConfig:
@@ -36,7 +36,7 @@ resources:
           #max-size: 50m
       #portMappings:
         #- "800:800"
-      #cmd: "home/mohit"
+      cmd: "home/mohit"
       #volumesFrom:
         #- "basedataContainer"
         #- "basedataContainer:ro"
