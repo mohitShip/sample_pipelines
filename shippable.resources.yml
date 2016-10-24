@@ -10,12 +10,21 @@ resources:
 
   - name: box-nginx
     type: image
-    integration: dockerhub
+    #integration: dockerhub
     pointer:
-      sourceName: scriptnull/sample_node
-      isPull: false
+      sourceName: mohit5it9/nginx
+      isPull: true
     seed:
-      versionName: dc.pipeline.3
+      versionName: latest
+
+  #- name: box-nginx
+  #  type: image
+  #  integration: dockerhub
+  #  pointer:
+  #    sourceName: scriptnull/sample_node
+  #    isPull: false
+  #  seed:
+  #    versionName: dc.pipeline.3
 
 
   - name: box-opts
