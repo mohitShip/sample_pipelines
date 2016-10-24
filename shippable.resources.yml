@@ -4,7 +4,7 @@ resources:
     integration: dockerhub
     pointer:
       sourceName: "mohit5it9/nginx"
-      isPull: true
+      isPull: false
     seed:
       versionName: v1
 
