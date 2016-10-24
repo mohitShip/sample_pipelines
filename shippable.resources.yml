@@ -3,10 +3,10 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "mohit5it9/ubuntu"
       isPull: false
     seed:
-      versionName: "latest"
+      versionName: "v2"
 
   - name: box-nginx
     type: image
