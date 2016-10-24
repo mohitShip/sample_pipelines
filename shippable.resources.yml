@@ -1,7 +1,7 @@
 resources:
   - name: box-sn
     type: image
-    integration:
+    integration: dockerhub
     pointer:
       sourceName: mohit5it9/nginx
       isPull: true
@@ -10,7 +10,7 @@ resources:
 
   - name: box-nginx
     type: image
-    #integration: dockerhub
+    integration: dockerhub
     pointer:
       sourceName: mohit5it9/nginx
       isPull: true
