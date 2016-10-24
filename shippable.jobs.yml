@@ -61,7 +61,7 @@ jobs:
       - IN: mohit-2
       - IN: mohit-1
       - IN: tri-cluster
-      - IN: box-opts
+      #- IN: box-opts
       - TASK: managed
         deployMethod: upgrade
 
