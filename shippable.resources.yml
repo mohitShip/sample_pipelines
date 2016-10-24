@@ -6,7 +6,7 @@ resources:
       sourceName: "mohit5it9/ubuntu"
       isPull: false
     seed:
-      versionName: "v2"
+      versionName: "latest"
 
   - name: box-nginx
     type: image
