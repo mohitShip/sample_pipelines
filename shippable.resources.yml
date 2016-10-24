@@ -6,7 +6,7 @@ resources:
       sourceName: "mohit5it9/busybox"
       isPull: true
     seed:
-      versionName: "v1"
+      versionName: v1
 
   - name: box-nginx
     type: image
