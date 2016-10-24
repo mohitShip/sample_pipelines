@@ -1,19 +1,19 @@
 resources:
   - name: box-sn
     type: image
-    integration: dockerhub
+    integration:
     pointer:
-      sourceName: library/nginx
-      isPull: false
+      sourceName: mohit5it9/nginx
+      isPull: true
     seed:
       versionName: latest
 
   - name: box-nginx
     type: image
-    integration: dockerhub
+    #integration: dockerhub
     pointer:
-      sourceName: library/nginx
-      isPull: false
+      sourceName: mohit5it9/nginx
+      isPull: true
     seed:
       versionName: latest
 
