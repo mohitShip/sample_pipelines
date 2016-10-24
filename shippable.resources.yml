@@ -10,7 +10,7 @@ resources:
 
   - name: box-nginx
     type: image
-    #integration: dockerhub
+    integration:
     pointer:
       sourceName: mohit5it9/nginx
       isPull: true
