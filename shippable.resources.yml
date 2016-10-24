@@ -45,7 +45,7 @@ resources:
           #max-size: 50m
       #portMappings:
         #- "800:800"
-      cmd: "uname -a"
+      links: "mohit:123"
       #volumesFrom:
         #- "basedataContainer"
         #- "basedataContainer:ro"
