@@ -6,7 +6,7 @@ resources:
       sourceName: mohit5it9/nginx
       isPull: true
     seed:
-      versionName: latest
+      versionName: v3
 
   - name: box-nginx
     type: image
@@ -15,7 +15,7 @@ resources:
       sourceName: mohit5it9/nginx
       isPull: true
     seed:
-      versionName: latest
+      versionName: v3
 
   #- name: box-nginx
   #  type: image
