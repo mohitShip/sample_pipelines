@@ -6,7 +6,7 @@ resources:
       sourceName: library/nginx
       isPull: false
     seed:
-      versionName: latest
+      versionName: stable
 
   - name: box-nginx
     type: image
