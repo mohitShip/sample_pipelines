@@ -1,6 +1,6 @@
 resources:
   - name: box-sn
-    type: image2
+    type: image
     integration: dockerhub
     pointer:
       sourceName: library/nginx
