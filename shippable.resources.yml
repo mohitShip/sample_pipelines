@@ -62,12 +62,12 @@ resources:
     pointer:
       region: "us-east-3"
   
-  - name: tri-aws
-    type: cluster
-    integration: aws
-    pointer:
-      sourceName: "testCL"
-      region: "us-west-2"
+  #- name: tri-aws
+  #  type: cluster
+  #  integration: aws
+  #  pointer:
+  #    sourceName: "testCL"
+  #    region: "us-west-1"
 
   # - name: ecs-cluster
   #   type: cluster
