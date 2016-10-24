@@ -3,8 +3,8 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: mohit5it9/nginx
-      isPull: true
+      sourceName: library/nginx
+      isPull: false
     seed:
       versionName: latest
 
@@ -12,8 +12,8 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: mohit5it9/nginx
-      isPull: true
+      sourceName: library/nginx
+      isPull: false
     seed:
       versionName: latest
 
