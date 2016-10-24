@@ -4,7 +4,7 @@ resources:
     integration: dockerhub
     pointer:
       sourceName: "mohit5it9/ubuntu"
-      isPull: false
+      isPull: true
     seed:
       versionName: "latest"
 
