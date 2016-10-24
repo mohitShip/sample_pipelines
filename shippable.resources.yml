@@ -1,7 +1,7 @@
 resources:
   - name: box-sn
     type: image
-    integration: docker
+    integration: dockerhub
     pointer:
       sourceName: "library/nginx"
       isPull: false
@@ -10,7 +10,7 @@ resources:
 
   - name: box-nginx
     type: image
-    #integration: dockerhub
+    integration: dockerhub
     pointer:
       sourceName: "scriptnull/sample_node"
       isPull: false
@@ -83,11 +83,11 @@ resources:
   #     sourceName: "small-cluster"
   #     region: "us-east1-d"
 
-  #- name: ddc-cluster
-  #  type: cluster
-  #  integration: ddc
-  #  pointer:
-  #    sourceName: "ddc-cluster"
+  - name: ddc-cluster
+    type: cluster
+    integration: ddc
+    pointer:
+      sourceName: "ddc-cluster"
 
   # - name: dcl-cluster
   #   type: cluster
