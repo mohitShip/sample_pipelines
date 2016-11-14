@@ -1,7 +1,7 @@
 resources:
   - name: nginx-image-4
     type: image
-    integration: "docker-subint"
+    integration: "dockerhub"
     pointer:
       sourceName: "library/nginx"
     seed:
