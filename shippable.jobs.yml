@@ -104,15 +104,15 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: ddc-deploy
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: myEmail
-    steps:
-      - IN: ddc-cluster
-      - IN: mohit-1
+  #- name: ddc-deploy
+  #  type: deploy
+  #  on_start:
+  #    - NOTIFY: slackNotification
+  #  on_success:
+  #    - NOTIFY: myEmail
+  #  steps:
+  #    - IN: ddc-cluster
+  #    - IN: mohit-1
 
   # - name: dcl-deploy
   #   type: deploy
