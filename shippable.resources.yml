@@ -3,10 +3,10 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: mohit5it9/nginx
-      isPull: true
+      sourceName: library/nginx
+      isPull: false
     seed:
-      versionName: v3
+      versionName: latest
 
   - name: box-nginx
     type: image
@@ -27,9 +27,9 @@ resources:
   #    versionName: dc.pipeline.3
 
 
-  - name: box-opts
-    type: dockerOptions
-    version:
+  #- name: box-opts
+  #  type: dockerOptions
+  #  version:
       #publishAllPorts : true
       #labels:
         #jatin : triton
@@ -45,7 +45,7 @@ resources:
           #max-size: 50m
       #portMappings:
         #- "800:800"
-      links: "mohit:123"
+      #links: "mohit:123"
       #volumesFrom:
         #- "basedataContainer"
         #- "basedataContainer:ro"
@@ -65,11 +65,11 @@ resources:
   #   seed:
   #     interval: "*/2 * * * *"
 
-  - name: tri-cluster
-    type: cluster
-    integration: triton
-    pointer:
-      region: "us-east-3"
+  #- name: tri-cluster
+  #  type: cluster
+  #  integration: triton
+  #  pointer:
+  #    region: "us-east-3"
   
   #- name: tri-aws
   #  type: cluster
@@ -92,11 +92,11 @@ resources:
   #     sourceName: "small-cluster"
   #     region: "us-east1-d"
 
-  - name: ddc-cluster
-    type: cluster
-    integration: ddc
-    pointer:
-      sourceName: "ddc-cluster"
+  #- name: ddc-cluster
+  #  type: cluster
+  #  integration: ddc
+  #  pointer:
+  #    sourceName: "ddc-cluster"
 
   # - name: dcl-cluster
   #   type: cluster
@@ -109,12 +109,12 @@ resources:
   #   integration: jatin-dcl
   #   pointer:
   #     sourceName: "cluster-dcl"
-  - name: slackNotification
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#slack_notifications"
+  #- name: slackNotification
+  #  type: notification
+  #  integration: slack
+  #  pointer:
+  #    recipients:
+  #      - "#slack_notifications"
         
   - name: myEmail
     type: notification
