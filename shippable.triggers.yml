@@ -1,5 +1,5 @@
 triggers:
-   - name: trigger-dv-man
+   - name: trigger-dv-man1
      type: trigger
      version:
        counter: 2
