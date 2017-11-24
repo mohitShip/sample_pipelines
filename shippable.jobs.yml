@@ -17,4 +17,4 @@ jobs:
   - name: sample_node_runCI
     type: runCI
     steps:
-      - OUT: mohit-21
+      - OUT: box-sn1
