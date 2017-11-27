@@ -14,7 +14,7 @@ jobs:
       - IN: box-sn1
       - IN: trigger-dv-man1
 
-  - name: sample_node_runCI
-    type: runCI
-    steps:
-      - OUT: box-sn1
+  #- name: sample_node_runCI
+  #  type: runCI
+  #  steps:
+  #    - OUT: box-sn1
